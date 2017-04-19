@@ -4,106 +4,216 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Tweak User Guide</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[&quot;html&quot;,&quot;css&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <h1 style="text-align: center">tweak</h1>
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="html">html</a>
+              <a href="#" data-language-name="css">css</a>
+              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -112,235 +222,261 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://tweak.crewspace.io'>Get Tweak</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
+        <p><img src="https://s3.eu-central-1.amazonaws.com/tweak-template-2/images/tweak-share-img.png" alt="alt_text" /></p>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<h1 id="introduction">Introduction</h1>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>Welcome to Tweak User Guide. Tweak is a Chrome Extension that allows you to design in the browser. </p>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>It gives you the benefits of visual design tools on your browser while still using your HTML and CSS. With a click on the extension the page becomes editable and you can add elements and sections.</p>
 
-<h1 id="authentication">Authentication</h1>
+<p>Use this guide as a reference to get the most out of Tweak.</p>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id="installing">Installing</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<ol>
+<li>Install Nodejs:<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (Required for Tweak server)</li>
+<li>Install Chrome: <a href="https://www.google.com/chrome/browser/desktop/index.html">https://www.google.com/chrome/browser/desktop/index.html</a></li>
+<li>Install Tweak Chrome Extension: <a href="https://tweak.crewspace.io/">https://tweak.crewspace.io/</a></li>
+</ol>
+
+<h1 id="launching-tweak">Launching Tweak</h1>
+
+<p>Click Tweak browser icon after installing the extension.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/browser-action.png" alt="alt_text" /></p>
+
+<p>If prompted login or signup using your gmail credentials.</p>
+
+<p>Choose a template to start from.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+15.33.22.png" alt="alt_text" /></p>
+
+<h1 id="setting-up-tweak-template">Setting up Tweak template</h1>
+
+<h2 id="installing-tweak-server">Installing Tweak server</h2>
+
+<p>Templates come with local instance of Tweak server. Tweak requires a server to serve the page, which Tweak can then access through the browser. In theory Tweak can be used with any server, however only with Tweak server is it possible to use save and live reload features.</p>
+
+<p>Download and extract a template to a location of your choice.</p>
+
+<p>To install the server instance of the template execute using a termincal or command line from the template folder:</p>
+
+<p><code class="prettyprint">npm install</code></p>
+
+<h2 id="starting-tweak-server">Starting Tweak server</h2>
+
+<p>To start the server and serve the Tweak template on your browser execute from the template folder:</p>
+
+<p><code class="prettyprint">npm start</code></p>
+
+<p>This will serve the page at the address: <code class="prettyprint">http://localhost:8080</code></p>
+
+<h1 id="editing-a-page">Editing a page</h1>
+
+<p>Make sure you have Tweak server running and serving a Tweak template. </p>
+
+<p>Simple click the Tweak browser icon to start editing the page with Tweak.</p>
+
+<p>Now all the elements in the page are editable in the browser.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-03+at+12.50.29.png" alt="alt_text" /></p>
+
+<h2 id="adding-a-section">Adding a section</h2>
+
+<p>To add a section click on Tweak Floating Action Button on the bottom left, and click on add.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+16.14.44.png" alt="alt_text" /></p>
+
+<p>This will open the add sidebar, choose sections from the sidebar tab and click on the section you want to add.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+13.02.47.png" alt="alt_text" /></p>
+
+<p>Add section indicators will appear on the page, click on the position where you want to add the section.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+16.21.19.png" alt="alt_text" /></p>
+
+<h2 id="editing-a-section">Editing a section</h2>
+
+<p>On the left side of each section there is section actions. These actions are:</p>
+
+<ol>
+<li>Section background</li>
+<li>Remove section</li>
+</ol>
+
+<p>Additionally each section height can be resized by dragging the section from the bottom border.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+16.06.08.png" alt="alt_text" /></p>
+
+<h2 id="adding-an-element">Adding an element</h2>
+
+<p>To add an element click on Tweak Floating Action Button on the bottom left, and click on add.</p>
+
+<p>This will open the add sidebar, choose elements from the sidebar tab and click on the element you want to add.</p>
+
+<p>Click on the section that you want to add the element to.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+13.06.37.png" alt="alt_text" /></p>
+
+<h2 id="editing-an-element">Editing an element</h2>
+
+<p>When an element is clicked element actions will appear above the element. These actios are:</p>
+
+<ol>
+<li>Edit (Only on text and button elements)</li>
+<li>Text align actions (Only on text and button elements)</li>
+<li>Remove element</li>
+<li>Element color</li>
+</ol>
+
+<p>Additionally each element can be dragged and position absolutely relative to its parent section. Elements can be also resized by dragging them from left or right border.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+16.33.04.png" alt="alt_text" /></p>
+
+<h2 id="mobile-layout">Mobile layout</h2>
+
+<p>To switch to mobile layout click on Tweak Floating Action Button on the bottom left and choose mobile view.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/desktop-mobile.png" alt="alt_text" /></p>
+
+<p>In mobile view all elements that are within the inner narrow border of the section will be drawn on the screen.</p>
+
+<h2 id="save-download">Save/Download</h2>
+
+<h3 id="save-tweak-server-only">Save (Tweak server only)</h3>
+
+<p>Save action is only available with Tweak server. To save simply click on the Tweak Floating Action Button on the bottom left and choose save. This will save all the changes of the page.</p>
+
+<h3 id="download">Download</h3>
+
+<p>Download action is available when there is no Tweak server running and the page is server by other server. 
+To download simply click on the Tweak Floating Action Button on the bottom left and choose download. </p>
+
+<p>This will generate a zip file that contains index.html and a css file. Replace the old index.html with the extracted index.html and copy the css file to the css folder of your page.</p>
+
+<h1 id="customizing-a-tweak-template">Customizing a Tweak template</h1>
+
+<p>To truly get the full benefit of Tweak, you need some HTML and CSS knowledge to create your own custom components and sections.</p>
+
+<p>Tweak templates are normal HTML and CSS files, making it very simple to customize.</p>
+
+<p><img src="https://s3.eu-central-1.amazonaws.com/tweak-documentation-assets/Screen+Shot+2017-04-18+at+15.51.34.png" alt="alt_text" /></p>
+
+<h2 id="sections">Sections</h2>
+<pre class="highlight html tab-html"><code>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span> <span class="na">style=</span><span class="s">"height: 500px"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-inner"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre><pre class="highlight css tab-css"><code>    <span class="nc">.section</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+  <span class="p">}</span>
+</code></pre><pre class="highlight css tab-css"><code>    <span class="nc">.section-inner</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">960px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span>
+  <span class="p">}</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>A section must be a div HTML element, and have the class section. 
+The class section has the width 100%, the initial height of the section must be defined in the sections.html.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<p>Inner section is a child of section. It has the maximum width of 960px and is the container of components. 
+On hand held devices inner section is 100%, any component outside it’s width borders on the mobile view is not drawn on the screen.</p>
+
+<h2 id="adding-a-custom-section">Adding a custom section</h2>
+
+<p>Launch the Tweak server of the template that you want to customize and on the browser click on the Tweak browser action. Go to the directory the templates directory. Open sections.html in code editor of your choice.</p>
+
+<p>On sections.html are listed all the sections of the Tweak template. Add a section with the height 750px. </p>
+
+<p>Add nice gradient background to the section by giving it a child div with the class nice-gradient. In the main.css add new style for the nice-gradient.</p>
+<pre class="highlight html tab-html"><code>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span> <span class="na">style=</span><span class="s">"height: 750px"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nice-gradient"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-inner"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre><pre class="highlight css tab-css"><code>    <span class="nc">.nice-gradient</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+    <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">150deg</span><span class="p">,</span> <span class="m">#3f51b1</span> <span class="m">0%</span><span class="p">,</span> <span class="m">#5a55ae</span> <span class="m">13%</span><span class="p">,</span> <span class="m">#7b5fac</span> <span class="m">25%</span><span class="p">,</span> <span class="m">#8f6aae</span> <span class="m">38%</span><span class="p">,</span> <span class="m">#a86aa4</span> <span class="m">50%</span><span class="p">,</span> <span class="m">#cc6b8e</span> <span class="m">62%</span><span class="p">,</span> <span class="m">#f18271</span> <span class="m">75%</span><span class="p">,</span> <span class="m">#f3a469</span> <span class="m">87%</span><span class="p">,</span> <span class="m">#f7c978</span> <span class="m">100%</span><span class="p">);</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+  <span class="p">}</span>
 </code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+<p>Now back on your browser open Tweak add sidebar and open the sections tab, if your sections tab was already open click on the refresh icon.
+Your newly added section should appear now there.</p>
+
+<h2 id="components">Components</h2>
+<pre class="highlight html tab-html"><code>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"component"</span> <span class="na">style=</span><span class="s">"width: 100px"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"logo-text"</span><span class="nt">&gt;</span>tweak<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre><pre class="highlight css tab-css"><code>    <span class="nc">.component</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.component</span> <span class="nt">img</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
 </code></pre>
+<p>Component is the containing div of elements that can be positioned using Tweak. 
+Component is absolutely positioned relative to inner section. 
+Component can contain any HTML element (p, div, span, h1, h2, h3, input, button etc).</p>
 
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<h2 id="adding-a-custom-element">Adding a custom element</h2>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>Launch the Tweak server of the template that you want to customize and on the browser click on the Tweak browser action. Go to the directory the templates directory. Open components.html in code editor of your choice.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>On compnents.html are listed all the elements of the Tweak template. 
+Add a component with the width 200px and an anchor child element with the class example-button.</p>
 
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<h1 id="kittens">Kittens</h1>
-
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
+<p>In the main.css add new style for the example-button.</p>
+<pre class="highlight html tab-html"><code>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"component"</span> <span class="na">style=</span><span class="s">"width: 200px"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"example-button"</span><span class="nt">&gt;</span>Example button<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre><pre class="highlight css tab-css"><code>    <span class="nc">.example-button</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#3f51b1</span><span class="p">;</span>
+    <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">6px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">50</span><span class="p">,</span> <span class="m">50</span><span class="p">,</span> <span class="m">93</span><span class="p">,</span> <span class="m">.11</span><span class="p">),</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.08</span><span class="p">);</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+    <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+    <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">.025em</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="p">}</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>Now back on your browser open Tweak add sidebar and open the elements tab, if your elements tab was already open click on the refresh icon.
+Your newly added element should appear now there.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
+<h2 id="editing-css-with-livereload">Editing CSS with livereload</h2>
 
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
+<p>Tweak fully supports editing the projects CSS in a code editor of your choice. Infact this is the reccomended way of using Tweak. 
+You can also use CSS preprocessor of your choice (LESS, SASS, etc) as long as the output CSS is saved on the css folder.</p>
 
-<p>This endpoint retrieves all kittens.</p>
-
-<h3 id="http-request">HTTP Request</h3>
-
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
-
-<h3 id="query-parameters">Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-<h3 id="http-request">HTTP Request</h3>
-
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
-
-<h3 id="url-parameters">URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-
-          <h1 id="errors">Errors</h1>
-
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
-</tr>
-</tbody></table>
+<p>Tweak server listens for changes in the CSS folder and when it detects them it will notify the browser and the CSS stylesheets will be reloaded automatically on the served page.</p>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="html">html</a>
+                <a href="#" data-language-name="css">css</a>
+                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
